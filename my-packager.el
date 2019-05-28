@@ -40,5 +40,5 @@
 
 (require 'use-package)
 (require 'init-loader)
-(init-loader-load "~/.emacs.d/my/libs")
+(init-loader-load "~/.emacs.d/dot_emacs/libs")
 (init-loader-show-log)

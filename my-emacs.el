@@ -1,6 +1,6 @@
 ;; write following in ~/.emacs
 ;;
-;; (add-to-list 'load-path "~/.emacs.d/my/")
+;; (add-to-list 'load-path "~/.emacs.d/dot_emacs/")
 ;; (load "my-emacs" t)
 
 
