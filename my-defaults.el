@@ -10,6 +10,9 @@
 (global-set-key "\M-*" 'align)
 (global-set-key "\M-+" 'align-regexp)
 
+;; grep-find command
+;; (grep-apply-setting 'grep-find-command "find . -type f ! -name '*.map' ! -path '*/node_modules/*' ! -path '*/ios/Pods/*' ! -path '*/ios/build/*' ! -path '*/android/app/build/*' -exec grep -nH --null -e   \\{\\} +")
+
 ;; Dired
 (setq dired-use-ls-dired nil)
 
