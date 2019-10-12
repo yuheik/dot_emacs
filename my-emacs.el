@@ -6,7 +6,7 @@
 
 ;; Package independent
 (load "my-mac" t)
-(load "my-proxy" t)
+;; (load "my-proxy" t)
 (load "my-packager" t)
 (load "my-defaults" t)
 (load "my-ui" t)
