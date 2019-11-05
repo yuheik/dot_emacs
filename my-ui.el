@@ -10,6 +10,10 @@
 (set-scroll-bar-mode nil)
 (setq ring-bell-function 'ignore) ;disable visible bell. both flush and bell.
 
+;; Mode Line
+(setq line-number-mode t)
+(setq column-number-mode t)
+
 
 ;; Note. Require font "Ricty"
 (custom-set-faces

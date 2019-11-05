@@ -12,10 +12,19 @@
 
 ;; grep-find command
 (require 'grep)
- (grep-apply-setting 'grep-find-command "find . -type f ! -name '*.map' ! -path '*/node_modules/*' ! -path '*/ios/Pods/*' ! -path '*/ios/build/*' ! -path '*/android/app/build/*' ! -path '*/__test__/*' -exec grep -nH --null -e   \\{\\} +")
+(grep-apply-setting 'grep-find-command "find . -type f ! -name '*.map' ! -path '*/node_modules/*' ! -path '*/ios/Pods/*' ! -path '*/ios/build/*' ! -path '*/android/app/build/*' ! -path '*/__test__/*' -exec grep -nH --null -e   \\{\\} +")
+
+;; Search
+(setq dabbrev-case-fold-search t) ; nil : distinguish upper/lower case | t : not distinguish
+
+;; Completion
+(setq completion-ignore-case t)
 
 ;; Dired
-(setq dired-use-ls-dired nil)
+; (setq dired-use-ls-dired nil)
+; (setq dired-listing-switches "-alhS")    ; show file size with human readable format, sort by file size.
+(setq dired-recursive-copies 'always)
+(setq dired-recursive-deletes 'always)
 
 ;; Ediff
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
