@@ -9,6 +9,7 @@
 (global-set-key "\M-g" 'goto-line)
 (global-set-key "\M-*" 'align)
 (global-set-key "\M-+" 'align-regexp)
+(global-set-key "\M-w" 'my-copy-word-at-point) ; from my-lib.el
 
 ;; grep-find command
 (require 'grep)
@@ -16,6 +17,7 @@
 
 ;; Search
 (setq dabbrev-case-fold-search t) ; nil : distinguish upper/lower case | t : not distinguish
+(define-key isearch-mode-map "\M-w" 'my-isearch-yank-word-at-point) ; from my-lib.el
 
 ;; Completion
 (setq completion-ignore-case t)
