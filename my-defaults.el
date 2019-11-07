@@ -37,14 +37,5 @@
 (show-paren-mode t)                 ; show matching pairs of parentheses
 (setq-default indent-tabs-mode nil) ; tabs
 
-; Clear redundant
-(defun my-cleanup-for-spaces ()
-  (interactive)
-  (delete-trailing-whitespace)
-  (save-excursion
-    (save-restriction
-      (widen)
-      (goto-char (point-max))
-      (delete-blank-lines))))
-
-(add-hook 'before-save-hook 'my-cleanup-for-spaces)
+;; On Save
+(add-hook 'before-save-hook 'my-cleanup-file)

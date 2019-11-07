@@ -13,3 +13,13 @@
   (skip-syntax-backward "w")
   (isearch-mode t)
   (isearch-yank-word-or-char))
+
+; Remove trailing-whitespace and redundant blank lines at the eof.
+(defun my-cleanup-file ()
+  (interactive)
+  (delete-trailing-whitespace)
+  (save-excursion
+    (save-restriction
+      (widen)
+      (goto-char (point-max))
+      (delete-blank-lines))))
