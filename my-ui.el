@@ -1,3 +1,5 @@
+;; Settings about the visuality.
+
 ;; Theme
 (load-theme 'tango-dark t)
 
@@ -8,7 +10,9 @@
 		       (alpha  . 95)))
 (tool-bar-mode 0)
 (set-scroll-bar-mode nil)
-(setq ring-bell-function 'ignore) ;disable visible bell. both flush and bell.
+(show-paren-mode t)                 ; show matching pairs of parentheses
+(setq ring-bell-function 'ignore)   ; disable visible bell. both flush and bell.
+(setq-default indent-tabs-mode nil) ; tabs
 
 ;; Mode Line
 (setq line-number-mode t)

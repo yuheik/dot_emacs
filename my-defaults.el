@@ -34,8 +34,6 @@
 
 ;; Others
 (defalias 'yes-or-no-p 'y-or-n-p)   ; Yes/No
-(show-paren-mode t)                 ; show matching pairs of parentheses
-(setq-default indent-tabs-mode nil) ; tabs
 
 ;; On Save
 (add-hook 'before-save-hook 'my-cleanup-file)
