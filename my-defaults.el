@@ -9,6 +9,7 @@
 (global-set-key "\M-g" 'goto-line)
 (global-set-key "\M-*" 'align)
 (global-set-key "\M-+" 'align-regexp)
+(global-set-key "\M-}" 'indent-region)
 (global-set-key "\M-w" 'my-copy-word-at-point) ; from my-lib.el
 
 ;; grep-find command
