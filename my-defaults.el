@@ -14,7 +14,7 @@
 
 ;; grep-find command
 (require 'grep)
-(grep-apply-setting 'grep-find-command "find . -type f ! -name '*.map' ! -path '*/node_modules/*' ! -path '*/ios/Pods/*' ! -path '*/ios/build/*' ! -path '*/android/app/build/*' ! -path '*/__test__/*' -exec grep -nH --null -e   \\{\\} +")
+(grep-apply-setting 'grep-find-command "find . -type f ! -name '*.map' ! -path '*/build/*'  ! -path '*/app/build/*' ! -path '*/node_modules/*' ! -path '*/ios/Pods/*' ! -path '*/ios/build/*' ! -path '*/android/app/build/*' ! -path '*/__test__/*' -exec grep -nH -e   \\{\\} +")
 
 ;; Search
 (setq dabbrev-case-fold-search t) ; nil : distinguish upper/lower case | t : not distinguish
