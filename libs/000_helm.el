@@ -4,10 +4,11 @@
    ("C-c h"   . helm-command-prefix)
    ("C-x C-f" . helm-find-files)
    ("C-x rl"  . helm-bookmarks)
-   ;; ("C-x b"   . helm-buffers-list)
+   ("C-x rb"  . helm-bookmarks)
    ("C-x i"   . helm-imenu)
    ("C-x F"   . helm-recentf)
    ("C-x g"   . helm-google-suggest)
+   ("C-x ."   . helm-imenu-anywhere)
    :map helm-map
    ("<tab>" . helm-execute-persistent-action)
    ("C-i"   . helm-execute-persistent-action)
